@@ -2,7 +2,7 @@ import EditTodoForm from "@/components/EditTodoForm";
 
 const getTodo = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/todos/${id}`, {
+    const res = await fetch(`https://todo-assignment-jade.vercel.app/api/todos/${id}`, {
       cache: "no-store",
     });
     console.log(res);

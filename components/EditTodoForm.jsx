@@ -15,7 +15,7 @@ const EditTodoForm = ({ id, t, d }) => {
       return;
     }
     try {
-      const res = await fetch(`http://localhost:3000/api/todos/${id}`, {
+      const res = await fetch(`https://todo-assignment-jade.vercel.app/api/todos/${id}`, {
         method: "PUT",
         headers: {
           "Content-type": "application/json",
